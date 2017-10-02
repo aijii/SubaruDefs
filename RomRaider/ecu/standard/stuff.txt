@@ -1,0 +1,103 @@
+Table_Primary_Open_Loop_Fueling_Failsafe                    0x890B0 
+
+
+
+Table_Primary_Open_Loop_Fueling_Failsafe_KCA_Alternate_Mode 0x89040 
+
+
+
+Table_Primary_Open_Loop_Fueling_KCA_Additive_B_High         0x89094 
+
+
+
+Table_Primary_Open_Loop_Fueling_KCA_Additive_B_Low          0x89078 
+
+
+
+Table_Primary_Open_Loop_Fueling_KCA_Alternate_Mode          0x89024
+
+
+
+#define tPolfKcaAlt (0x00089024)
+#define hTablePolfKcaAlt (0x0002FD9C)
+#define tPolfKcaBLo (0x00089078)
+#define hTablePolfKcaBLo (0x0002FDB4)
+#define tPolfKcaBHi (0x00089094)
+#define hTablePolfKcaBHi (0x0002FDB8)
+
+
+#define tPolfKcaAlt (0x00089094)
+#define hTablePolfKcaAlt (0x0002FDB8)
+#define tPolfKcaBLo (0x000890B0)
+#define hTablePolfKcaBLo (0x0002FDBC)
+#define tPolfKcaBHi (0x00089024)
+#define hTablePolfKcaBHi (0x0002FD9C)
+
+
+
+#define tPolfKcaAlt (0x00089024)
+#define hTablePolfKcaAlt (0x0002FD9C)
+#define tPolfKcaBLo (0x00089078)
+#define hTablePolfKcaBLo (0x0002FDB4)
+#define tPolfKcaBHi (0x00089094)
+#define hTablePolfKcaBHi (0x0002FDB8)
+
+	
+
+	<table name="Primary Open Loop Fueling (KCA Alternate Mode)" address="cb758">
+		<table name="Engine Load" address="cb6c4" elements="19"/>
+		<table name="Engine Speed" address="cb710"/>
+	</table>
+
+	<table name="Primary Open Loop Fueling (Failsafe)(KCA Alternate Mode)" address="cb944">
+		<table name="Engine Load" address="cb8b0" elements="19"/>
+		<table name="Engine Speed" address="cb8fc"/>
+	</table>
+	
+	
+	<table name="Primary Open Loop Fueling (KCA Additive B Low)" address="cbb44">
+		<table name="Engine Load" address="cbab0" elements="19"/>
+		<table name="Engine Speed" address="cbafc"/>
+	</table>
+
+	
+	<table name="Primary Open Loop Fueling (KCA Additive B High)" address="cbd30">
+		<table name="Engine Load" address="cbc9c" elements="19"/>
+		<table name="Engine Speed" address="cbce8"/>
+	</table>
+	
+	
+	<table name="Primary Open Loop Fueling (Failsafe)" address="cbf1c">
+		<table name="Engine Load" address="cbe88" elements="19"/>
+		<table name="Engine Speed" address="cbed4"/>
+	</table>
+	
+	
+	---
+	
+	
+
+	<table name="Primary Open Loop Fueling (KCA Alternate Mode)" address="cbc84">
+		<table name="Engine Load" address="cbbf0" elements="19"/>
+		<table name="Engine Speed" address="cbc3c"/>
+	</table>
+
+	<table name="Primary Open Loop Fueling (Failsafe)(KCA Alternate Mode)" address="cbe70">
+		<table name="Engine Load" address="cbddc" elements="19"/>
+		<table name="Engine Speed" address="cbe28"/>
+	</table>
+
+	<table name="Primary Open Loop Fueling (KCA Additive B Low)" address="cc070">
+		<table name="Engine Load" address="cbfdc" elements="19"/>
+		<table name="Engine Speed" address="cc028"/>
+	</table>
+
+	<table name="Primary Open Loop Fueling (KCA Additive B High)" address="cc25c">
+		<table name="Engine Load" address="cc1c8" elements="19"/>
+		<table name="Engine Speed" address="cc214"/>
+	</table>
+
+	<table name="Primary Open Loop Fueling (Failsafe)" address="cc448">
+		<table name="Engine Load" address="cc3b4" elements="19"/>
+		<table name="Engine Speed" address="cc400"/>
+	</table>

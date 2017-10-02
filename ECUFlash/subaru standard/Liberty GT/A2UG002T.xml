@@ -150,6 +150,7 @@
   <table name="Injector Latency" address="c872c">
     <table name="Y" address="c8718" />
   </table>
+  <table name="Fuel Injector Pulse Width Limit (Minimum)" address="C79FC"/>
   <table name="Injector Flow Scaling" address="c7a08" />
   <table name="Per Injector Pulse Width Compensation A" address="ca5d8">
     <table name="X" address="ca550" />
@@ -353,6 +354,11 @@
   <table name="Timing Comp Minimum Load (Per Cylinder)" address="cc104" />
   <table name="Timing Comp Maximum RPM (Per Cylinder)" address="cc100" />
   <table name="Timing Comp Minimum Coolant Temp (Per Cylinder)" address="cc108" />
+  <table name="Ignition Timing Compensation Overrun" address="CC5DF">
+		<table name="Coolant Temperature" address="CC2E4" />
+	</table>
+  <table name="Ignition Timing Compensation Overrun RPM Delta" address="CC05C"/>
+
   <table name="Feedback Correction Range (RPM)" address="cc114" />
   <table name="Feedback Correction Minimum Load" address="cc10c" />
   <table name="Feedback Correction Retard Value" address="cc134" />
@@ -441,6 +447,43 @@
   <table name="Idle Speed Target C" address="ceb9c">
     <table name="Y" address="ce648" />
   </table>
+  
+    
+  	<table name="AF 3 Correction Limits" address="32CA8" type="2D" level="1" scaling="A/FLearning#1Limits(%)">
+		<table name="X" type="Static X Axis" elements="2">
+			<data>High</data>
+			<data>Low</data>
+		</table>
+	</table>
+		
+  
+  	<table name="Overrun Fueling RPM Resume Threshold" address="c95dc">
+		<table name="Coolant Temperature" address="c8004"/>
+	</table>
+
+	<table name="Overrun Enrich RPM Delta Activation" address="c7ecc">
+	</table>
+
+	<table name="Overrun initial injector enrichment (pulsewidth)" address="c7ed0">
+	</table>
+
+	<table name="Overrun Fueling Cut Counter RPM Threshold" address="c7f1c">
+	</table>
+
+  
+  <table name="Low Pulse Width Fuel Injector Compensation" address="c8530">
+		<table name="Injector Pulse Width" address="c8510"/>
+	</table>
+
+	<table name="Low pulse width fuel injector compensation maximum RPM" address="c7e38">
+	</table>
+
+	<table name="Low pulse width fuel injector compensation maximum IPW" address="c7e3c">
+
+	</table>
+	
+	<table name="Fuel Injector Pulse Width Limit (Minimum)" address="c79FC"/>
+	
   <table name="Force Pass Readiness Monitors" address="8717a" />
   <table name="(P0000) PASS CODE (NO DTC DETECTED)" address="7b311" />
   <table name="(P0000) PASS CODE (NO DTC DETECTED)_" address="7b312" />
